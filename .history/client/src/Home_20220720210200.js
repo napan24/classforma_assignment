@@ -130,9 +130,6 @@ const Home = () => {
     return (
         <>
             <div id="alert" style={{ display: "none", height: "35vh", width: "35vw", backgroundColor: "white", position: "absolute", zIndex: '2', left: "35%", top: "25%", border: "2px solid red" }}>
-                <span style={{fontSize:"200%",display:'flex',justifyContent:'center'}}>
-                Delete {data}?
-                </span>
                 <button onClick={() => { showAlert("alert") }} type="button" class="btn btn-primary" style={{ marginRight: "1vw", position: "absolute", bottom: "10%", left: "15%", padding: "2vh" }}>Cancel</button>
                 <button onClick={(e) => { replace(e) }} style={{ marginRight: "1vw", position: "absolute", bottom: "10%", left: "65%", padding: "2vh" }} type="button" class="btn btn-primary">Delete</button>
             </div>
@@ -150,7 +147,7 @@ const Home = () => {
                     <Left_section_list></Left_section_list>
                 </div>
                 <Middle_section leftClose={leftClose} rightClose={rightClose} showLeftComponent={showLeftComponent}  showRightComponent={showRightComponent} textField={textField} showFile={showFile}></Middle_section>
-                <Right_section showRightComponent={showRightComponent} personName={personName} CloseClick={CloseClick} placeName={placeName}></Right_section>
+                <Right_section showRightComponent={showRightComponent}></Right_section>
             </div>
         </>
     )
