@@ -130,7 +130,7 @@ const Home = () => {
     return (
         <>
             <div id="alert" style={{ display: "none", height: "35vh", width: "35vw", backgroundColor: "white", position: "absolute", zIndex: '2', left: "35%", top: "25%", border: "2px solid red" }}>
-                <span style={{fontSize:"200%",display:'flex',justifyContent:'center',marginTop:'5%'}}>
+                <span style={{fontSize:"200%",display:'flex',justifyContent:'center',marginTop:'10%'}}>
                 Delete {data}?
                 </span>
                 <button onClick={() => { showAlert("alert") }} type="button" class="btn btn-primary" style={{ marginRight: "1vw", position: "absolute", bottom: "10%", left: "15%", padding: "2vh" }}>Cancel</button>
